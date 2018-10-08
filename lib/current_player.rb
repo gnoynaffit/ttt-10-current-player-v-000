@@ -1,7 +1,7 @@
 require "pry"
 
 def turn_count(board)
-  counter = 3
+  counter = 0
   board.each do |token|
     if token == "X" || token == "O"
       counter +- 1
@@ -11,5 +11,5 @@ def turn_count(board)
 end
 
 def current_player(board)
-  turn_count(board).even? ? "X" : "O"
+  turn_count(board).odd? ? "X" : "O"
 end
