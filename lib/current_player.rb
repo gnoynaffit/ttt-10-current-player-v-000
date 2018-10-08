@@ -1,7 +1,7 @@
 require "pry"
 
 def turn_count(board)
-  counter = 3
+  counter = 0
   board.each do |token|
     if token == "X" || token == "O"
       counter +- 1
